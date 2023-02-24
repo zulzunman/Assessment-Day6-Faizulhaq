@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Home</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#buttonfirst").click(function(){
+				alert("success save")
+			})
+			$(".buttonseccond").click(function(){
+				alert("success unsave")
+			})
+			$("#inputfirst").change(function(){
+				console.log(" <<<<<<< test this")
+				console.log($("#inputfirst").val())
+				$("#inputsecond").val($("#inputfirst").val())
+			})
+		})
+	</script>
+</head>
+<body>
+	<h1>Belajar jquery</h1>
+	<form action="">
+		<label for="">Input Your Name</label>
+		<input type="text" id="inputfirst">
+		<input type="" id="inputsecond"><br><br>
+		<label for="startDate">Birt Date:</label>
+		<input type="text" id="startDate" name="startDate"><br><br>
+		<label for="spinner">Input Number Phone:</label>
+		<input id="spinner" name="value"><br><br>
+	</form>	
+	<a href="file:///E:/Files/My%20File/Kuliah/Kampus%20Merdeka/MaxyAcademy/assessment/assessment-jquery/leaflet.html"><button id="buttonfirst">Save</button></a>
+	<button class="buttonseccond">Unsave</button>
+
+	<script type="text/javascript">
+			$( "button" ).button();
+		$("#startDate").datepicker();
+	</script>
+</body>
+</html>
